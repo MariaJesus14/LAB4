@@ -18,11 +18,14 @@ public class Test {
      */
     public static void main(String[] args) {
          int [] vector ={1,8,6,7,9,5,4,6};
-        Recursividad.invertir(vector, 0, vector.length-1);
-        for (int i : vector) {
-            System.out.println(""+i);
-        }
+         int [] vectorbinario ={1,1,0,0,1};
+//        Recursividad.invest(vector, 0, vector.length-1);
+//        for (int i : vector) {
+//           
+//       }
+     // System.out.println(""+Recursividad.Returnvec(vector, 0));
        //  System.out.println(""+ MCD(228, 184));
+        System.out.println(""+Recursividad.binaryToDecimal(vectorbinario, 0));
     
     }
     

@@ -23,10 +23,9 @@ public class Test {
 //        for (int i : vector) {
 //           
 //       }
-     // System.out.println(""+Recursividad.Returnvec(vector, 0));
+     // System.out.println(""+Recursividad.Returnvec(vector));
        //  System.out.println(""+ MCD(228, 184));
-        System.out.println(""+Recursividad.binaryToDecimal(vectorbinario, 0));
-    
+      //  System.out.println(""+Recursividad.binaryToDecimal(vectorbinario, 0));
     }
     
 }

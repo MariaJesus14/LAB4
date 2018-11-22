@@ -45,13 +45,16 @@ public class Recursividad {
 //) Realice un método que retorne una hilera de texto con el contenido de un vector recibido, cada
 //elemento separado por un espacio. Este método le servirá para la prueba del método anterior (5 pts)
 
-    public static String Returnvec(int[] vector, int index) {
+    public static String Returnvec(int[] vector) {
 
-        if (index <= vector.length - 1) {
+        return ""+Returnvec(vector,0);
+    }
+    private static String Returnvec (int [] vector, int index){
+        if (index >= vector.length) {
             return "";
         } else {
 
-            return " " + Returnvec(vector, index++);
+            return vector[index]+" " + Returnvec(vector, index++);
         }
     }
 
@@ -71,5 +74,5 @@ public class Recursividad {
             }
         }
     }
-
+   
 }

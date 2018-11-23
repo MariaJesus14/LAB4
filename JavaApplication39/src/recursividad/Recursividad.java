@@ -15,6 +15,7 @@ public class Recursividad {
 //expresado en notación decimal. Recibe el número binario y retorna el número decimal. No puede
 //hacer uso de String ni similares. 
     
+    final static int [] array = {50000, 20000, 10000, 5000, 2000, 1000, 500, 100, 50, 25, 10, 5};
   private static int decimalValue = 0;
   public static int binaryToDecimal( int[] vector, int index ) {
   if(index >= 0) {
@@ -49,13 +50,31 @@ public class Recursividad {
 
         return ""+Returnvec(vector,0);
     }
-    private static String Returnvec (int [] vector, int index){
+    static String Returnvec (int [] vector, int index){
         if (index >= vector.length) {
             return "";
         } else {
 
             return vector[index]+" " + Returnvec(vector, index++);
         }
+    }
+    public static String obtenerDeposito(int dinero, String txt){
+        if (dinero <= 0) 
+            return txt;
+            int resto = atm(dinero);
+            txt += resto+"\n";
+            dinero-=resto;
+            return obtenerDeposito(dinero, txt);
+    }
+    private static int atm(int r){
+        
+        for (int billete : array) {
+            if (r-billete >= 0) {
+                return billete;
+            }
+        }
+        return 0;
+        
     }
 
     //5) Realice un método para calcular el MCD(máximo común divisor) de dos número enteros
@@ -74,5 +93,6 @@ public class Recursividad {
             }
         }
     }
+
    
 }

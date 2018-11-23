@@ -16,16 +16,21 @@ public class Test {
     /**
      * @param args the command line arguments
      */
+        
     public static void main(String[] args) {
-         int [] vector ={1,8,6,7,9,5,4,6};
-         int [] vectorbinario ={1,1,0,0,1};
+         int [] vector ={1,8,6};
+         int [] vectorbinario ={1,0,1,1,0,1};
+         
 //        Recursividad.invest(vector, 0, vector.length-1);
 //        for (int i : vector) {
-//           
-//       }
+//            System.out.println(i);  
+//     }
      // System.out.println(""+Recursividad.Returnvec(vector));
-       //  System.out.println(""+ MCD(228, 184));
-      //  System.out.println(""+Recursividad.binaryToDecimal(vectorbinario, 0));
+     int total = 46725;
+        System.out.println(Recursividad.obtenerDeposito(total,""));
+     
+     //System.out.println(""+ MCD(46225, 20000));
+       // System.out.println(""+Recursividad.binaryToDecimal(vectorbinario, 0));
     }
     
 }

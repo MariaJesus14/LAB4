@@ -9,7 +9,8 @@ import static recursividad.Recursividad.MCD;
 
 /**
  *
- * @author Usuario
+ * @author Roibin Elizondo
+ * @author Maria 
  */
 public class Test {
 
